@@ -1,0 +1,16 @@
+//le ls des containers
+docker ps -a
+
+//pour creer l'image d'un container a partir d'un dockerfile
+docker build -t test1 .
+
+//executer l'image
+docker run #id
+
+//pour supp un container
+docker rm #id
+
+//pour supp une image
+docker rmi #id
+
+IMPORTANT on doit supp le container avant de supp une image 
