@@ -1,0 +1,8 @@
+FROM debian
+
+RUN apt-get update && apt install nginx -y
+
+EXPOSE 80
+
+#desactive le daemon pour garder le processus nginx en vie
+CMD ["nginx", "-g", "daemon off;"]
