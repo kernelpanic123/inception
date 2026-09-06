@@ -8,7 +8,7 @@ down:
 
 clean: down
 	docker system prune -a
-	rm -rf /home/lonelyfish/data/mariadb/*
-	rm -rf /home/lonelyfish/data/wordpress/*
+	sudo rm -rf /home/lonelyfish/data/mariadb/*
+	sudo rm -rf /home/lonelyfish/data/wordpress/*
 
 .PHONY: all down clean

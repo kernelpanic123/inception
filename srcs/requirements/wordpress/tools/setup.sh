@@ -21,7 +21,7 @@ if [ ! -f "/var/www/wordpress/wp-config.php" ]; then
         --admin_email="$ADMIN_EMAIL"
 
     wp user create --allow-root \
-        "$USER1_LOGIN $USER1_EMAIL" \
+        "$USER1_LOGIN" "$USER1_EMAIL" \
         --user_pass="$USER1_PASS" \
         --role=author
 fi
