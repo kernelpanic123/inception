@@ -1,6 +1,6 @@
 all:
-	mkdir -p /home/abder/data/mariadb
-	mkdir -p /home/abder/data/wordpress
+	mkdir -p /home/lonelyfish/data/mariadb
+	mkdir -p /home/lonelyfish/data/wordpress
 	docker compose -f ./srcs/docker-compose.yml up --build
 
 down:
@@ -8,7 +8,7 @@ down:
 
 clean: down
 	docker system prune -a
-	rm -rf /home/abder/data/mariadb/*
-	rm -rf /home/abder/data/wordpress/*
+	rm -rf /home/lonelyfish/data/mariadb/*
+	rm -rf /home/lonelyfish/data/wordpress/*
 
 .PHONY: all down clean

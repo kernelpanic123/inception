@@ -43,11 +43,11 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: /home/abder/data/mariadb
+      device: /home/lonelyfish/data/mariadb
       o: bind
   wp_data:
     driver: local
     driver_opts:
       type: none
-      device: /home/abder/data/wordpress
+      device: /home/lonelyfish/data/wordpress
       o: bind
